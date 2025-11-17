@@ -1,0 +1,105 @@
+#############################
+# Build results
+#############################
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+[Bb]uild/
+[Ll]og/
+
+#############################
+# Visual Studio 2022
+#############################
+.vs/                 # Pasta de cache do Visual Studio 2015+
+*.vc.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.vscode/
+*.user
+*.suo
+*.cache
+*.tlog
+*.log
+*.tmp
+*.temp
+
+#############################
+# C# / WinForms Generated Files
+#############################
+*.Designer.cs
+*.g.cs
+*.g.i.cs
+*.Generated.cs
+
+#############################
+# NuGet
+#############################
+*.nupkg
+*.snupkg
+packages/
+**/packages/*
+project.lock.json
+project.assets.json
+# Pasta global de pacotes (evitar caso você use restore local)
+# .nuget/
+
+#############################
+# Publish
+#############################
+publish/
+*.pubxml
+*.pubxml.user
+
+#############################
+# Entity Framework (se usado)
+#############################
+migration.sql
+
+#############################
+# Rider / JetBrains
+#############################
+.idea/
+*.DotSettings.user
+
+#############################
+# Arquivos temporários comuns
+#############################
+*.bak
+*.old
+*.tmp
+*.temp
+*.dbmdl
+*.cache
+*.wixproj.*
+*.pidb
+*.svclog
+
+#############################
+# Windows
+#############################
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+#############################
+# Office temp files
+#############################
+~$*
+
+#############################
+# User-specific
+#############################
+*.userprefs
+*.rsuser
+*.userosscache
+*.suo
+
+#############################
+# Local history
+#############################
+.localhistory/

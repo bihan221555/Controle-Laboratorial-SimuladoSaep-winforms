@@ -1,0 +1,31 @@
+create database labcontrole_db;
+use labcontrole_db;
+
+create table usuarios(
+	id int primary key auto_increment,
+    nome varchar(100) not null,
+    login varchar(100)not null,
+    senha varchar(100) not null
+);
+
+create table materiais(
+	id int primary key auto_increment,
+    nome varchar(100) not null,
+    tipo varchar(50) not null,
+    quantidade int not null,
+    minimo int not null,
+    unidade_medida varchar(5)
+);
+
+create table movimentacoes(
+	id int primary key auto_increment,
+    id_material int not null,
+	id_usuario int not null,	
+    tipo_movimentacao varchar(100) not null,
+	quantidade int not null,
+    data_movimentacao date not null,
+	FOREIGN KEY (id_material) REFERENCES materiais(id),
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);
+
+insert into usuarios (nome, login, senha) values ('Leonardo','123','123');
